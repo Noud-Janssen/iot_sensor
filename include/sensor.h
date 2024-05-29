@@ -18,7 +18,10 @@ public:
     ~sensor() = default;
 
 public:
-    int get_temperature();
+    void init();
+    void debug();
+    float get_temperature();
+    float get_humidity();
 private:
     uint8_t m_pin;
     DHT_Unified m_dht;
